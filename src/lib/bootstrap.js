@@ -37,7 +37,7 @@ WebComponents.waitFor(async () => {
 if ("serviceWorker" in navigator) {
   const allowedHostnames = ["web.dev", "localhost"];
   if (allowedHostnames.indexOf(window.location.hostname) !== -1) {
-    navigator.serviceWorker.register("/sw.js");
+//    navigator.serviceWorker.register("/sw.js");
   } else {
     console.warn(
       "skipping SW, unsupported hostname:",
